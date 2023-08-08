@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signup">
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="dev.virunarala.christmas.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_gallery"
+            app:destination="@id/gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/gallery"
+        android:name="dev.virunarala.christmas.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/about_us"
+        android:name="dev.virunarala.christmas.about.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/account"
+        android:name="dev.virunarala.christmas.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/signup"
+        android:name="dev.virunarala.christmas.signup.SignupFragment"
+        android:label="SignupFragment" />
+</navigation>

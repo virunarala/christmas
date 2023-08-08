@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/jesus_sunset_bg"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_register"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_heading"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_instruction"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_subheading_2"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_bg_black"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:padding="@dimen/padding_medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_full_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subheading_1"/>
+
+        <EditText
+            android:id="@+id/edit_text_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/label_full_name"
+            android:textColorHint="@color/gray"
+            android:paddingStart="@dimen/padding_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:textColor="@color/white"
+            android:background="@drawable/rect_bg_white_border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+
+            android:text="@string/label_mobile_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subheading_1"/>
+
+        <EditText
+            android:id="@+id/edit_text_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/label_mobile_number"
+            android:textColorHint="@color/gray"
+            android:paddingStart="@dimen/padding_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:textColor="@color/white"
+            android:background="@drawable/rect_bg_white_border"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/label_email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subheading_1"/>
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/label_email"
+            android:textColorHint="@color/gray"
+            android:paddingStart="@dimen/padding_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:textColor="@color/white"
+            android:background="@drawable/rect_bg_white_border"
+            android:inputType="textEmailAddress"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:textSize="@dimen/text_size_subheading_2"/>
+
+</LinearLayout>
